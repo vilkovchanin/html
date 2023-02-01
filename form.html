@@ -10,29 +10,36 @@
 
 <body>
     <form action="formdata.php" method="post" name="form1">
-        <p><label>Input name (max 10 symbols): <input type="text" name="name" size="40" maxlength="10"></label></p>
-        <p><label>Input password : <input type="password" name="password" size="40" maxlength="10"></label></p>
-        <p>Do you like to save time? </p>
-        <label>Yes<input type="radio" name="time" value="yes"></label>
-        <label>No<input type="radio" name="time"value="no" checked></label>
-        <p>Witch type of tools do you like?</p>
-        <p>
-            <label><input type="checkbox" name="ez" checked>Daybook</label>
-            <label><input type="checkbox" name="ti">Timing</label>
-            <label><input type="checkbox" name="ot">Own tools</label>
-        </p>
+        <fieldset>
+            <legend>Log in</legend>
+            <p><label>Input name (max 10 symbols): <input type="text" name="name" size="40" maxlength="10"></label></p>
+            <p><label>Input password : <input type="password" name="password" size="40" maxlength="10"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+            <p>Do you like to save time? </p>
+            <label>Yes<input type="radio" name="time" value="yes"></label>
+            <label>No<input type="radio" name="time" value="no" checked></label>
+            <p>Witch type of tools do you like?</p>
+            <p>
+                <label><input type="checkbox" name="ez" checked>Daybook</label>
+                <label><input type="checkbox" name="ti">Timing</label>
+                <label><input type="checkbox" name="ot">Own tools</label>
+            </p>
 
-        <p><label for="sleep">How loang are you sleeping?</label></p>
-        <select name="sleep" id="sleep">
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="seven">7</option>
-            <option value="8" selected>8</option>
-            <option value="8+">more than 8</option>
-        </select>
+            <p><label for="sleep">How loang are you sleeping?</label></p>
+            <select name="sleep" id="sleep">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="seven">7</option>
+                <option value="8" selected>8</option>
+                <option value="8+">more than 8</option>
+            </select>
+        </fieldset>
         <p><label for="text">Describe yourself</label></p>
         <p><textarea name="text" cols="50" rows="10" id="text">Write here -></textarea></p>
-        <p><input type="reset" name="rseset" id="" value="Reset"><input type="submit" name="submit" id="" value="Send"></p>
+        <p><input type="reset" name="rseset" id="" value="Reset"><input type="submit" name="submit" id="" value="Send">
+        </p>
         <p><input type="image" src="images/ibutton.png" name="imgbtn" id=""></p>
         <p><input type="button" value="button" name="button"></p>
 
